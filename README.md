@@ -20,3 +20,7 @@
 #### Website Link
 
 [https://samuelrun.github.io/se_project_spots/]
+
+#### Explanation Video
+
+[https://drive.google.com/file/d/1muPJAEdcL81DXP1X4GyPg4HwtJaI8K5p/view?usp=sharing]

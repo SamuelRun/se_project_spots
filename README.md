@@ -19,4 +19,4 @@
 
 #### Website Link
 
-![Spots Website](https://samuelrun.github.io/se_project_spots/)
+[https://samuelrun.github.io/se_project_spots/]

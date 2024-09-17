@@ -1,21 +1,22 @@
 # Project 3: Spots
 
-### Overview  
+## Project features
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+- Semantic HTML5
+- Flexbox
+- Positioning
+- Flat BEM file structure
+- A custom form
+- Media Queries to fit on multiple devices
+- Gridbox
+- Hoverstates
+
+### Sizing Photos
+
+![Desktop View](./images/Desktop%20View.png)
+![Tablet View](./images/Tablet%20View.png)
+![Mobile View](./images/Mobile%20View.png)
+
+#### Website Link
+
+![Spots Website](https://samuelrun.github.io/se_project_spots/)

@@ -14,10 +14,10 @@
 }
 
 .card__title {
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 20px;
+  line-height: 1.2;
   font-weight: 500;
-  line-height: 24px;
   text-align: left;
   margin: 0;
   text-overflow: ellipsis;
@@ -43,5 +43,10 @@
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+  }
+
+  .card__title {
+    font-size: 16px;
+    line-height: 1;
   }
 }

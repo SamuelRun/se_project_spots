@@ -29,6 +29,8 @@ const initialCards = [
   },
 ];
 
+const modal = document.querySelectorAll(".modal");
+
 // Profile elements
 const editModalBtn = document.querySelector(".profile__edit-btn");
 const cardModalBtn = document.querySelector(".profile__add-btn");
@@ -38,6 +40,7 @@ const profileDescription = document.querySelector(".profile__description");
 // Form elements
 const editModal = document.querySelector("#edit-modal");
 const editFormElement = editModal.querySelector(".modal__form");
+const cardSubmitBtn = editModal.querySelector(".modal__submit-btn");
 const editModalCloseBtn = editModal.querySelector(".modal__close-btn");
 const editModalNameInput = editModal.querySelector("#profile-name-input");
 const editModalDescriptionInput = editModal.querySelector(
@@ -95,10 +98,12 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", escModal);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", escModal);
 }
 
 function handleEditFormSubmit(evt) {
@@ -114,12 +119,18 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   cardForm.reset();
+  disableButton(cardSubmitBtn, settings);
   closeModal(cardModal);
 }
 
 editModalBtn.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
+  resetValidation(
+    editFormElement,
+    [editModalNameInput, editModalDescriptionInput],
+    settings
+  );
   openModal(editModal);
 });
 
@@ -145,4 +156,19 @@ cardForm.addEventListener("submit", handleAddCardSubmit);
 initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.prepend(cardElement);
+});
+
+function escModal(evt) {
+  if (evt.key === "Escape") {
+    const modal_opened = document.querySelector(".modal_opened");
+    closeModal(modal_opened);
+  }
+}
+
+modal.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target == modal) {
+      closeModal(modal);
+    }
+  });
 });

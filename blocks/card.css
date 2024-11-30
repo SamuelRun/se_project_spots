@@ -44,6 +44,7 @@
 
 .card__like-btn:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .card__like-btn_liked {
@@ -53,6 +54,7 @@
 
 .card__like-btn_liked:hover {
   background-image: url(../images/like-icon-liked-hover.svg);
+  cursor: pointer;
 }
 
 .card__delete-btn {
@@ -70,6 +72,7 @@
 
 .card__delete-btn:hover {
   background-image: url(../images/trash-icon-hover.svg);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {

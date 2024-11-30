@@ -74,6 +74,7 @@
 
 .modal__close-btn:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .modal__close-btn_type_preview {
@@ -86,6 +87,7 @@
 
 .modal__close-btn_type_preview:hover {
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -122,6 +124,7 @@
 
 .modal__input:hover {
   border: 1px solid rgba(33, 33, 33, 1);
+  cursor: pointer;
 }
 
 .modal__input_type_error {
@@ -131,6 +134,7 @@
 
 .modal__input_type_error:hover {
   border: 1.5px solid rgba(255, 0, 0, 1);
+  cursor: pointer;
 }
 
 .modal__input_type_error:focus {
@@ -159,6 +163,7 @@
 
 .modal__submit-btn:hover {
   opacity: 80%;
+  cursor: pointer;
 }
 
 .modal__submit-btn_disabled {

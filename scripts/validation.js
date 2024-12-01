@@ -32,7 +32,7 @@ const resetValidation = (formElement, inputList) => {
   });
 };
 
-const showInputError = (formElement, inputElement, errorMsg, settings) => {
+const showInputError = (formElement, inputElement, errorMsg) => {
   const errorMsgElement = formElement.querySelector(
     `#${inputElement.id}-error`
   );
@@ -40,7 +40,7 @@ const showInputError = (formElement, inputElement, errorMsg, settings) => {
   inputElement.classList.add(settings.inputErrorClass);
 };
 
-const hideInputError = (formElement, inputElement, settings) => {
+const hideInputError = (formElement, inputElement) => {
   const errorMsgElement = formElement.querySelector(
     `#${inputElement.id}-error`
   );

@@ -26,13 +26,13 @@ const hasInvalidInput = (inputList) => {
   });
 };
 
-const resetValidation = (formElement, inputList) => {
+const resetValidation = (formElement, inputList, settings) => {
   inputList.forEach((input) => {
-    hideInputError(formElement, input);
+    hideInputError(formElement, input, settings);
   });
 };
 
-const showInputError = (formElement, inputElement, errorMsg) => {
+const showInputError = (formElement, inputElement, errorMsg, settings) => {
   const errorMsgElement = formElement.querySelector(
     `#${inputElement.id}-error`
   );
@@ -40,7 +40,7 @@ const showInputError = (formElement, inputElement, errorMsg) => {
   inputElement.classList.add(settings.inputErrorClass);
 };
 
-const hideInputError = (formElement, inputElement) => {
+const hideInputError = (formElement, inputElement, settings) => {
   const errorMsgElement = formElement.querySelector(
     `#${inputElement.id}-error`
   );

@@ -125,6 +125,14 @@
 
   .profile__avatar-btn {
     visibility: visible;
+    max-height: 24px;
+    max-width: 24px;
+    top: 52px;
+    left: 52px;
+    gap: 8px;
+    border-radius: 6px;
+    padding: 4px;
+    display: block;
   }
 
   .profile__avatar-btn::after {
@@ -135,6 +143,10 @@
     height: 80px;
     width: 80px;
     margin: 0 0 12px;
+  }
+
+  .profile__avatar-container {
+    margin: 0;
   }
 
   .profile__name {

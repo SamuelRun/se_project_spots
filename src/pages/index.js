@@ -15,8 +15,8 @@ import { setButtontext } from "../utils/helpers.js";
 const spotsLogo = document.getElementById("spots-logo");
 spotsLogo.src = logoSrc;
 
-const bessieAvatar = document.getElementById("bessie-avatar");
-bessieAvatar.src = avatarSrc;
+const avatarElement = document.getElementById("avatar-image");
+avatarElement.src = avatarSrc;
 
 const plusIcon = document.getElementById("plus");
 plusIcon.src = plusSrc;
@@ -248,7 +248,8 @@ function handleAvatarSubmit(evt) {
       avatar: avatarInput.value,
     })
     .then((data) => {
-      avatarSrc = data.avatar;
+      profileAvatar.src = data.avatar;
+      avatarForm.reset();
       closeModal(avatarModal);
     })
     .catch(console.error)
